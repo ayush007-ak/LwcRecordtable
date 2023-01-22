@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Datatable styling in lwc">
+        <template if:true={tableData}>    <!--if true data is there then only it loads--> 
+            <lightning-datatable 
+            data={tableData}
+            columns={columns}
+            key-field="Id"
+            hide-checkbox-column
+            >
+    
+            </lightning-datatable>
+        </template>
+        
+
+    </lightning-card>
+    
+</template>
